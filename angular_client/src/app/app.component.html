@@ -1,0 +1,14 @@
+<div *ngIf="loading">
+  Loading...
+</div>
+<div *ngIf="error">
+  Error :(
+</div>
+<div *ngIf="notes">
+  <div *ngFor="let note of notes">
+    <div>
+      <h3>{{ note?.title }}</h3>
+      <p>{{ note?.body }}</p>
+    </div>
+  </div>
+</div>
